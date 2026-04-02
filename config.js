@@ -27,8 +27,8 @@ const SITE_CONFIG = {
 
   // ── FORMULÁRIO ───────────────────────────────────────────
   dinnerCompanionSceneEyebrow: "Só mais uma perguntinha...",
-  dinnerCompanionSceneTitle: "Vens acompnhado(a)?",
-  formCompanionQuestion: "Vais com acompanhante?",
+  dinnerCompanionSceneTitle: "Vens acompanhado(a)?",
+  formCompanionQuestion: "",
   formCompanionYes:      "Sim",
   formCompanionNo:       "Não",
   formCompanionAddLabel: "+ Adicionar acompanhante",
@@ -61,7 +61,7 @@ const SITE_CONFIG = {
   // 🔧 EDITAR AQUI com os dados reais do after
   afterQuestionTitle:     "Depois do jantar...",
   afterQuestionSubtitle:  "vais ao after?",
-  afterQuestionNote:      "A noite não acaba aqui... a maltinha é inimiga do fim 😘",
+  afterQuestionNote:      "A noite não acaba aqui... a maltinha é inimiga do fim ✨",
   afterNoDinnerQuestion:  "Mesmo não indo ao jantar...",
   afterNoDinnerSubtitle:  "queres aparecer no after dinner?",
 
