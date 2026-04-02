@@ -41,7 +41,7 @@ const SITE_CONFIG = {
   // 🔧 EDITAR AQUI com os dados reais do restaurante
   dinnerDateLabel:    "18 de Abril de 2026",
   dinnerTimeLabel:    "19:15",
-  dinnerVenueName:    "Restaurante Aprazível",
+  dinnerVenueName:    "Restaurante Aprazível (Menu 35€/pessoa)",
   dinnerVenueAddress: "Galerias Páteo Garrett, R. Garrett 19, 1200-093 Lisboa",
   dinnerVenueMapsUrl: "https://share.google/MfY5LhM7l7T69CJkF",
   dinnerVenueImage:   "",
