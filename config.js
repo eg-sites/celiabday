@@ -17,7 +17,7 @@ const SITE_CONFIG = {
   // ── WELCOME ──────────────────────────────────────────────
   welcomeEyebrow:     "Confirmação Final, Because...",
   welcomeTitle:       "Antes de revelar todos os detalhes desta celebração...",
-  welcomeMessage:     "Confirma a tua presença. O espaço e o horário do jantar serão revelados mediante confirmação.",
+  welcomeMessage:     "Confirma a tua presença. O espaço e o horário do jantar serão revelados mediante confirmação. (Preenche mesmo que não possas ir, por favor)",
   welcomeSubmessage:  "",
   welcomeNameLabel:   "O teu nome",
   welcomeNamePlaceholder: "Escreve aqui o teu nome",
