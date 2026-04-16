@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f8eeea" />
+  <meta
+    name="description"
+    content="25 cartas românticas para a Célia, numa experiência digital delicada e memorável."
+  />
+  <title>25 Cartas para a Célia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__glow"></div>
+    <img class="loader__bow" id="loader-bow" src="assets/ornament-bow.svg" alt="" loading="eager" />
+    <p class="loader__label">a preparar as tuas cartas...</p>
+  </div>
+
+  <div class="ambient ambient--top" aria-hidden="true"></div>
+  <div class="ambient ambient--bottom" aria-hidden="true"></div>
+  <div class="ambient ambient--grain" aria-hidden="true"></div>
+  <div class="petal-stream" id="petal-stream" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false">
+    <span class="music-toggle__icon" aria-hidden="true">♪</span>
+    <span class="music-toggle__label" id="music-toggle-label">Ativar música</span>
+  </button>
+
+  <main class="app">
+    <section class="scene scene--opening is-active" id="scene-opening" aria-labelledby="opening-title">
+      <div class="scene__inner scene__inner--opening">
+        <div class="hero-card">
+          <img class="hero-card__bow" id="hero-bow" src="assets/ornament-bow.svg" alt="" loading="eager" />
+
+          <div class="hero-card__eyebrow" id="opening-eyebrow">for you, my love</div>
+          <h1 class="hero-card__title" id="opening-title">25 cartas para ti</h1>
+
+          <div class="hero-card__divider" aria-hidden="true">
+            <span></span>
+            <span class="hero-card__divider-dot"></span>
+            <span></span>
+          </div>
+
+          <div class="hero-card__copy" id="opening-copy">
+            <p>Quis transformar uma parte do que sinto por ti em palavras.</p>
+            <p>Não para te dizer tudo, porque nunca caberia num só lugar,</p>
+            <p>mas para te deixar 25 pequenos lembretes de como és especial para mim.</p>
+          </div>
+
+          <p class="hero-card__whisper" id="opening-whisper">
+            uma pequena caixa de amor, memória e Primavera
+          </p>
+
+          <button class="button button--primary button--opening" id="open-experience" type="button">
+            Abrir
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene--letters" id="scene-letters" aria-labelledby="overview-title">
+      <div class="scene__inner scene__inner--letters">
+        <header class="overview-shell">
+          <div class="overview-shell__copy">
+            <p class="overview-shell__eyebrow" id="overview-eyebrow">Célia's Day</p>
+            <h2 class="overview-shell__title" id="overview-title">Abre cada carta ao teu ritmo</h2>
+            <p class="overview-shell__description" id="overview-description">
+              Cinco capítulos, vinte e cinco lembranças, e uma coleção de palavras pensadas só para ti.
+            </p>
+          </div>
+
+          <div class="progress-panel" aria-label="Progresso das cartas">
+            <div class="progress-panel__meta">
+              <span class="progress-panel__count" id="progress-count">0/25</span>
+              <span class="progress-panel__label" id="progress-label">cartas abertas</span>
+            </div>
+            <div class="progress-bar" aria-hidden="true">
+              <span class="progress-bar__fill" id="progress-fill"></span>
+            </div>
+            <div class="chapter-pills" id="chapter-pills"></div>
+          </div>
+        </header>
+
+        <div class="final-entry" id="final-entry" hidden>
+          <div class="final-entry__copy">
+            <p class="final-entry__title" id="final-entry-title">Todas as 25 cartas já foram abertas.</p>
+            <p class="final-entry__hint" id="final-entry-hint">Quando te apetecer, o fecho está à tua espera.</p>
+          </div>
+          <button class="button button--secondary" id="open-finale" type="button">Ver o momento final</button>
+        </div>
+
+        <div class="chapter-stack" id="chapters-container" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="scene scene--finale" id="scene-finale" aria-labelledby="finale-title">
+      <div class="scene__inner scene__inner--finale">
+        <div class="finale-card">
+          <img class="finale-card__bow" id="finale-bow" src="assets/ornament-bow.svg" alt="" loading="lazy" />
+
+          <div class="finale-card__glow" aria-hidden="true"></div>
+
+          <div class="finale-card__topline" id="finale-eyebrow">25 de 25</div>
+          <h2 class="finale-card__title" id="finale-title">Parabéns, meu amor</h2>
+
+          <div class="finale-memory">
+            <div class="finale-memory__cards" aria-hidden="true">
+              <span class="finale-mini-card finale-mini-card--a"></span>
+              <span class="finale-mini-card finale-mini-card--b"></span>
+              <span class="finale-mini-card finale-mini-card--c"></span>
+              <span class="finale-mini-card finale-mini-card--d"></span>
+            </div>
+            <div class="finale-memory__blur">
+              <img id="finale-photo-blur" src="" alt="" loading="lazy" />
+            </div>
+            <div class="finale-memory__frame">
+              <div class="finale-memory__media">
+                <img id="finale-photo" src="" alt="" loading="lazy" />
+              </div>
+            </div>
+          </div>
+
+          <p class="finale-memory__caption" id="finale-caption">
+            Uma memória tua que quero continuar a guardar com carinho.
+          </p>
+
+          <div class="finale-card__copy" id="finale-copy"></div>
+          <p class="finale-card__signature" id="finale-signature">Com tudo o que sinto de mais bonito.</p>
+
+          <div class="finale-card__actions">
+            <button class="button button--primary" id="back-to-letters" type="button">Voltar às cartas</button>
+            <button class="button button--ghost" id="restart-experience" type="button">Recomeçar devagar</button>
+          </div>
+
+          <section class="finale-summary" aria-labelledby="finale-summary-title">
+            <h3 class="finale-summary__title" id="finale-summary-title">As 25 cartas, reunidas com calma</h3>
+            <div class="finale-summary__list" id="finale-summary-list"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="letter-modal" id="letter-modal" hidden>
+    <button class="letter-modal__backdrop" id="letter-backdrop" type="button" aria-label="Fechar carta"></button>
+
+    <article
+      class="letter-sheet"
+      id="letter-sheet"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="letter-kicker"
+      aria-describedby="letter-message"
+    >
+      <button class="letter-sheet__close" id="close-letter" type="button" aria-label="Fechar carta">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="letter-sheet__chrome" aria-hidden="true"></div>
+
+      <div class="letter-sheet__header">
+        <p class="letter-sheet__kicker" id="letter-kicker">Capítulo 1 · Carta 01</p>
+        <p class="letter-sheet__chapter" id="letter-chapter-title">Quem tu és</p>
+      </div>
+
+      <div class="letter-sheet__visual" id="letter-visual" data-effect="halo">
+        <div class="letter-sheet__motif" id="letter-motif" aria-hidden="true"></div>
+        <div class="letter-sheet__core"></div>
+        <div class="letter-sheet__ribbons" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="letter-sheet__sparkles" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="letter-sheet__icon" id="letter-icon" aria-hidden="true"></div>
+        <div class="letter-sheet__symbol" id="letter-symbol" aria-hidden="true">✦</div>
+      </div>
+
+      <p class="letter-sheet__message" id="letter-message"></p>
+
+      <div class="letter-sheet__footer">
+        <div class="letter-sheet__progress" id="letter-progress">1 de 25</div>
+        <button class="button button--secondary button--letter" id="letter-finale-link" type="button" hidden>
+          Ir outra vez para o abraço final
+        </button>
+        <button class="button button--primary button--letter" id="letter-confirm" type="button">
+          Guardar esta carta
+        </button>
+      </div>
+    </article>
+  </div>
+
+  <div class="toast" id="chapter-toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
